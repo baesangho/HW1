@@ -1,0 +1,33 @@
+1. 1)x = c(17,16,20,24,22,15,21,18)
+x[x>=20]
+1. 2)x[x>=20]=100 -> y
+y
+2. 1)data.1 <- 3:7
+diag(data.1)
+x = diag(data.1)
+x[!x>0] <- -1
+x
+2. 2)y <- x[,-5]
+y
+2. 3)yinfo <- c(dim(y))
+yinfo
+2. 4)y[y==-1] <- 0
+y1 <- y
+3. 1)v1 <- c(4,5,6,1)
+v2 <- c(NA,2,3,4)
+v3 <- c(3,2,NA,1)
+v4 <- c(2,3,NA,2)
+rdata <- data.frame(v1,v2,v3,v4,stringsAsFactors = F)
+rdata
+3. 2)is.na(rdata)
+3. 3)rdata <- rdata[complete.cases(rdata[,c("v2")]),]
+rdata <- rdata[complete.cases(rdata[,c("v3")]),]
+rdata
+3. 4)rdata1 <- rdata
+rdata1
+4. 1)temp <- list(TRUE, diag(2), seq(0,1,length=100),1,2,3,4)
+temp
+4. 2)temp[2] <- NULL
+temp
+4. 3)1
+4. 4)length(temp)
