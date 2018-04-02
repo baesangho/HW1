@@ -33,4 +33,31 @@ temp
 4. 4)length(temp)
 
 5. 1) 0 2 2 4
-a1 has 
+a1's length is 4 and a2's length is 2. 
+In vector addition, the vector with shorter length is reused.
+so a1+a2 = (-1+1,0+2,1+1,2+2) = (0,2,2,4)
+
+5.2) 0 0
+a1 = -1 -2    a2 = 1,2
+a1+a2 = 0 0
+
+5. 3) 3 4
+      3 4
+a1 = 0 0   a2 = 3 4
+     0 0
+a1 + a2 = 3 4
+          3 4
+5. 4) 
+a1 = 2 2
+     2 2
+a1[a1>2] = 0 
+This is correct sentence, because there isn't any element bigger than 2 in matrix a1.
+
+5. 5) 1 1 1 1
+a1 = 1 2 3 4 5
+a1[-1] means a1 except first element 
+so a1[-1] = 2 3 4 5
+a1[-length(a1)] = a1[-5] = 1 2 3 4
+2 3 4 5 - 1 2 3 4 = 1 1 1 1
+
+
