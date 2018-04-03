@@ -171,3 +171,22 @@ for(i in 1:1000) {
 print(freq.table)
 
 print(v)
+
+set.seed(1)
+m1 = 10
+m2 = 5
+num = 0
+rbinom(1,1,1/2)
+
+a <- rbinom(1,1,1/2)
+for(i in 1:4)
+if(a==0)
+{
+  m1 <- m1-1
+  m2 <- m2+1
+}
+else
+{
+  m1 <- m1+1
+  m2 <- m2-1
+}
