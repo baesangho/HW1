@@ -214,15 +214,31 @@ a=191
 191
 
 (3)
-Awin=0
+AW <- 0
+BW <- 0
+
 for(k in 1:200) {
   set.seed(k)
   m1 <- 10
   m2 <- 5
   num <- 0
-  a<-rbinom(1,1,1/2)
-  if(a==0)
-  {
-    Awin=Awin + 1
+  
+  while(TRUE) {
+    x <- rbinom(1, 1, 1/2) 
+    if(x == 0) {
+      m1 <- m1 - 1
+      m2 <- m2 + 1
+    } else {
+      m1 <- m1 + 1
+      m2 <- m2 - 1
+    } 
+    
+    if(m2 == 0) {
+      AW <- AW + 1
+      break;
+    } else if(m1 == 0) {
+      BW <- BW + 1
+      break;
+    }
   }
 }
